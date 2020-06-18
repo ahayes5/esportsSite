@@ -2,6 +2,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
+@import 'theme';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -13,21 +14,34 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 
-$esportsSite-primary: mat-palette($mat-indigo);
-$esportsSite-accent: mat-palette($mat-pink, A200, A100, A400);
+@mixin global-theme($theme) {
+  $primary:map-get($theme,primary);
+  $accent: map-get($theme,accent);
+  $warn: map-get($theme,warn);
+  $foreground: map-get($theme,foreground);
+  $background: map-get($theme,background);
 
-// The warn palette is optional (defaults to red).
-$esportsSite-warn: mat-palette($mat-red);
+  .content {
+    background-color: mat-color($background,background);
+    color: mat-color($foreground,text);
+  }
+}
+
 
 // Create the theme object (a Sass map containing all of the palettes).
-$esportsSite-theme: mat-light-theme($esportsSite-primary, $esportsSite-accent, $esportsSite-warn);
+$light-theme: mat-light-theme($mat-green, $mat-yellow, $mat-red);
+$dark-theme: mat-dark-theme(mat-palette($mat-green-dark),mat-palette($mat-golden-yellow),mat-palette($mat-red));
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include angular-material-theme($esportsSite-theme);
+.light-theme {
+  @include angular-material-theme($light-theme);
+}
+
+.dark-theme {
+  @include angular-material-theme($dark-theme);
+  @include global-theme($dark-theme);
+}
 
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family:  "Droid Sans","Helvetica Neue", sans-serif; }

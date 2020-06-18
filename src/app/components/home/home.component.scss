@@ -1,0 +1,20 @@
+@import '~@angular/material/theming';
+@import '../../../styles';
+
+.test {
+  text-align: right;
+}
+
+.title {
+  h1 {
+    padding-top: 4vh;
+    padding-right: 20px;
+    margin: 0;
+    text-align: right;
+    font-size: 7vh;
+    outline: black;
+    color: gold;
+    text-shadow: .1rem .2rem .5rem black;
+
+  }
+}
