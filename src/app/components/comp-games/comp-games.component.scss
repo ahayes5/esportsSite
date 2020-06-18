@@ -1,0 +1,16 @@
+@import '../../../styles';
+.game-card {
+  margin: 10px;
+  max-height: 40vh;
+  max-width: 30vh;
+  img {
+    height: 30vh;
+    width: 30vh;
+    margin: 1px;
+    position: center;
+  }
+  p {
+    height: .3vh;
+    text-align: center;
+  }
+}

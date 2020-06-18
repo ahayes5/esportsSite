@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {GAMES} from './game-list';
+import {Game} from './game';
 
 @Component({
   selector: 'app-comp-games',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comp-games.component.scss']
 })
 export class CompGamesComponent implements OnInit {
+  games = GAMES;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.games = GAMES;
   }
 
 }

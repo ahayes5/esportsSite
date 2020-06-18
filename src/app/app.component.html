@@ -5,6 +5,6 @@
   <button mat-button routerLink="/upcomingEvents">Upcoming Events</button>
   <button mat-button routerLink="/contact">Contact</button>
 </mat-toolbar>
-<div class="content">
+<div class="content" [ngStyle]="{'position': 'fixed'}">
   <router-outlet></router-outlet>
 </div>

@@ -41,6 +41,13 @@ $dark-theme: mat-dark-theme(mat-palette($mat-green-dark),mat-palette($mat-golden
   @include global-theme($dark-theme);
 }
 
+.row {
+  display: flex;
+}
+.column {
+  flex: 33.333%;
+  padding: 5px;
+}
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
