@@ -14,6 +14,8 @@ export class CompGamesComponent implements OnInit {
 
   ngOnInit(): void {
     this.games = GAMES;
+    this.games.sort((n1, n2) => {
+      return n1.name.localeCompare(n2.name);
+    });
   }
-
 }

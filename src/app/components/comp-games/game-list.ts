@@ -4,5 +4,5 @@ export const GAMES: Game[] = [
   {name: 'Rainbow Six Siege', link: '/comp-games/siege', image: 'assets/siegeIcon.png'},
   {name: 'League Of Legends', link: '/comp-games/league', image: 'assets/leagueIcon.png'},
   {name: 'Smash', link: '/comp-games/smash',  image: 'assets/smashIcon.png'},
-  {name: 'Rocket League', link: '/comp-games/rocketLeague', image: 'assets/rocketLeagueIcon.png'}
+  {name: 'Rocket League', link: '/comp-games/rocket-league', image: 'assets/rocketLeagueIcon.png'}
 ];

@@ -9,12 +9,18 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CompGamesComponent } from './components/comp-games/comp-games.component';
-import { UpcomingEventsComponent } from './components/upcoming-events/upcoming-events.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import { SiegeComponent } from './components/comp-games/siege/siege.component';
+import { LeagueComponent } from './components/comp-games/league/league.component';
+import { RocketLeagueComponent } from './components/comp-games/rocket-league/rocket-league.component';
+import { SmashComponent } from './components/comp-games/smash/smash.component';
+import {MatIconModule} from '@angular/material/icon';
+import { NewsComponent } from './components/news/news.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,8 +29,12 @@ import {MatListModule} from '@angular/material/list';
     AboutComponent,
     ContactComponent,
     CompGamesComponent,
-    UpcomingEventsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SiegeComponent,
+    LeagueComponent,
+    RocketLeagueComponent,
+    SmashComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +44,9 @@ import {MatListModule} from '@angular/material/list';
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
