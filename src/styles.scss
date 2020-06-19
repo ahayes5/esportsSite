@@ -25,7 +25,11 @@
     background-color: mat-color($background,background);
     color: mat-color($foreground,text);
   }
+  a {
+    color: mat-color($accent,text)
+  }
 }
+
 
 
 // Create the theme object (a Sass map containing all of the palettes).
