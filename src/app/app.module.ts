@@ -21,6 +21,7 @@ import { SmashComponent } from './components/comp-games/smash/smash.component';
 import {MatIconModule} from '@angular/material/icon';
 import { NewsComponent } from './components/news/news.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -36,18 +37,19 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     SmashComponent,
     NewsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatDividerModule,
-    MatListModule,
-    MatIconModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatCardModule,
+        MatDividerModule,
+        MatListModule,
+        MatIconModule,
+        HttpClientModule,
+        MatChipsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

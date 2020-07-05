@@ -1,1 +1,25 @@
-<p>siege works!</p>
+<div class="bg-video-container">
+  <video autoplay class="bg-video" loop muted playsinline>
+    <source src="assets/vid/breaching_cropped.mp4" type="video/mp4">
+  </video>
+</div>
+<div class="title-container">
+  <h1 [ngStyle]="{'padding-top': '25vh'}">Rainbow Six Siege</h1>
+</div>
+<div class="roster-container">
+  <h2>Roster</h2>
+</div>
+<div class="divisions">
+  <div *ngFor="let division of roster.sort(divisionSortFn)" class="division">
+    <h3>{{division.name}}</h3>
+    <div class="grid">
+      <mat-card *ngFor="let player of division.players.sort(playerSortFn)" class="roster-card"> <!-- TODO add material design dialogs with extra information about each player -->
+        <img alt="assets/img/beans.jpg" mat-card-image src="assets/img/beans.jpg">
+        <mat-card-content>
+          <p>{{player.name}}</p>
+          <p *ngIf="player.captain">Captain</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

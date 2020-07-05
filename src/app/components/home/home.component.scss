@@ -7,14 +7,40 @@
 
 .title {
   h1 {
-    padding-top: 4vh;
+    padding-top: 8vh;
     padding-right: 20px;
     margin: 0;
     text-align: right;
-    font-size: 5vh;
+    font-size: 3rem;
     outline: black;
     color: gold;
     text-shadow: .1rem .2rem .5rem black;
 
   }
+}
+
+.divider {
+  width: 100%;
+  background-color: black;
+}
+
+h2 {
+  text-align: center;
+  color: mat-color($accent);
+  font-size: 2rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+p {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-align: center;
+}
+ul {
+  position: relative;
+  left: 45%;
 }

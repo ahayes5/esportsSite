@@ -1,5 +1,5 @@
-<div class="row" [ngStyle]="{'position': 'relative', 'top': '10px'}">
-  <mat-card class="game-card" [ngStyle]="{'cursor': 'pointer'}" *ngFor="let game of games.sort()" routerLink="{{game.link}}">
+<div class="grid" [ngStyle]="{'position': 'relative', 'top': '10px'}">
+  <mat-card class="game-card " [ngStyle]="{'cursor': 'pointer'}" *ngFor="let game of games.sort()" routerLink="{{game.link}}">
     <img mat-card-image src="{{game.image}}" alt="{{game.name}} Image">
     <mat-card-content>
       <p>{{game.name}}</p>

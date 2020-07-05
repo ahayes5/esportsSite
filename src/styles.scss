@@ -34,7 +34,9 @@
   }
 }
 
-
+$primary: mat-palette($mat-green-dark);
+$accent: mat-palette($mat-golden-yellow);
+$warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $dark-theme: mat-dark-theme(mat-palette($mat-green-dark),mat-palette($mat-golden-yellow),mat-palette($mat-red));
@@ -55,3 +57,14 @@ $dark-theme: mat-dark-theme(mat-palette($mat-green-dark),mat-palette($mat-golden
 
 html, body { height: 100%; }
 body { margin: 0; font-family:  "Droid Sans","Helvetica Neue", sans-serif; }
+
+* {
+  margin-top: 0;
+}
+
+.navbar {
+  height: 5vh;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
